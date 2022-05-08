@@ -1,0 +1,30 @@
+###
+POST http://localhost:9000/api/characters HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Armitage Family",
+    "movie": "Run",
+    "specie": "human",
+    "appearances": 1
+}
+
+###
+GET http://localhost:9000/api/characters HTTP/1.1
+
+###
+GET http://localhost:9000/api/characters/627804080fe4fe6f12982ea1 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/characters/6278053d0fe4fe6f12982eab HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Xenomorph",
+    "movie": "Alien",
+    "specie": "alien creature",
+    "appearances": 8
+}
+
+###
+DELETE http://localhost:9000/api/characters/62781e911c0295c1d6a71f14 HTTP/1.1
