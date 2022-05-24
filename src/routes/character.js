@@ -2,9 +2,10 @@ const express = require("express");
 const characterSchema = require("../models/character");
 
 const router = express.Router();
+const { validateCreate } = require('../validators/characters')
 
 // create character
-router.post("/characters", (req, res) => {
+router.post("/characters", validateCreate, (req, res) => {
     const character = characterSchema(req.body);
     character
     .save()

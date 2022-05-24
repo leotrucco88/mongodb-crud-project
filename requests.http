@@ -3,10 +3,10 @@ POST http://localhost:9000/api/characters HTTP/1.1
 Content-Type: application/json
 
 {
-    "name": "Armitage Family",
-    "movie": "Run",
-    "specie": "human",
-    "appearances": 1
+    "name": "",
+    "movie": "u",
+    "specie": "star",
+    "appearances": "22"
 }
 
 ###
